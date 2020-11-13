@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="style.css"/>
+  <title>Find a Survey from the U.S. Census Bureau</title>
+</head>
+<body>
+    <h2>My Customers</h2>
+    <select id="mylist" onchange="myFunction()">
+        <option value="Select a state">Select a state</option>
+        <option value="Alabama">Alabama</option>
+        <option value="Alaska (Anchorage)">Alaska (Anchorage)</option>
+        <option value="Alaska (Barrow)">Alaska (Barrow)</option>
+        <option value="Alaska (Fairbanks)">Alaska (Fairbanks)</option>
+        <option value="Alaska (Southern)">Alaska (Southern)</option>
+        <option value="Arizona">Arizona</option>
+        <option value="Arkansas">Arkansas</option>
+        <option value="California (Los Angeles)">California (Los Angeles)</option>
+        <option value="California (Northern)">California (Northern)</option>
+        <option value="California (San Francisco)">California (San Francisco)</option>
+        <option value="Colorado">Colorado</option>
+        <option value="Connecticut">Connecticut</option>
+        <option value="Delaware">Delaware</option>
+        <option value="District of Columbia">District of Columbia</option>
+        <option value="Florida (Miami)">Florida (Miami)</option>
+        <option value="Florida (Tallahassee)">Florida (Tallahassee)</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Hawaii">Hawaii</option>
+        <option value="Idaho">Idaho</option>
+        <option value="Illinois (Chicago)">Illinois (Chicago)</option>
+        <option value="Illinois (Springfield)">Illinois (Springfield)</option>
+        <option value="Indiana">Indiana</option>
+        <option value="Iowa">Iowa</option>
+        <option value="Kansas">Kansas</option>
+        <option value="Kentucky">Kentucky</option>
+        <option value="Louisiana">Louisiana</option>
+        <option value="Maine">Maine</option>
+        <option value="Maryland">Maryland</option>
+        <option value="Massachusetts">Massachusetts</option>
+        <option value="Michigan">Michigan</option>
+        <option value="Minnesota">Minnesota</option>
+        <option value="Mississippi">Mississippi</option>
+        <option value="Missouri">Missouri</option>
+        <option value="Montana">Montana</option>
+        <option value="Nebraska">Nebraska</option>
+        <option value="Nevada">Nevada</option>
+        <option value="New Hampshire">New Hampshire</option>
+        <option value="New Jersey">New Jersey</option>
+        <option value="New Mexico">New Mexico</option>
+        <option value="New York">New York</option>
+        <option value="North Carolina">North Carolina</option>
+        <option value="North Dakota">North Dakota</option>
+        <option value="Ohio">Ohio</option>
+        <option value="Oklahoma">Oklahoma</option>
+        <option value="Oregon">Oregon</option>
+        <option value="Pennslyvania">Pennslyvania</option>
+        <option value="Puerto Rico">Puerto Rico</option>
+        <option value="Rhode Island">Rhode Island</option>
+        <option value="South Carolina">South Carolina</option>
+        <option value="South Dakota">South Dakota</option>
+        <option value="Tennessee">Tennessee</option>
+        <option value="Texas (Amarillo)">Texas (Amarillo)</option>
+        <option value="Texas (Austin)">Texas (Austin)</option>
+        <option value="Texas (San Antonio)">Texas (San Antonio)</option>
+        <option value="Utah">Utah</option>
+        <option value="Vermont">Vermont</option>
+        <option value="Virginia">Virginia</option>
+        <option value="Washington">Washington</option>
+        <option value="West Virginia">West Virginia</option>
+        <option value="Wisconsin">Wisconsin</option>
+        <option value="Wyoming">Wyoming</option>
+    </select>
+    <div>
+        <table id="myTable"  style="width: 100%">
+            <tbody id="elements">
+                <tr style="display: none"><td>Alabama</td><td>March 5 - 8, 1:54 p.m.</td><td>Oct. 4 - 8, 2:31 p.m.</td></tr>
+                <tr style="display: none"><td>Alaska (Anchorage)</td><td>Feb. 27 - March 2, 1:35 p.m.</td><td>Oct. 12 - 14, 2:13 p.m.</td></tr>
+                <tr style="display: none"><td>Alaska (Barrow)</td><td>Feb. 26 - 28, 1:39 p.m.</td><td>Oct. 13 -15, 2:13 p.m.</td></tr>
+                <tr style="display: none"><td>Alaska (Fairbanks)</td><td>Feb. 26 - March 2, 1:37 p.m.</td><td>Oct. 12 - 15, 2:11 p.m.</td></tr>
+                <tr style="display: none"><td>Alaska (Southern)</td><td>Feb. 27 - March 2, 1:36 p.m.</td><td>Oct. 4 - 8, 2:31 p.m.</td></tr>
+                <tr style="display: none"><td>Arizona</td><td>March 5 - 8, 1:40 p.m.</td><td>Oct. 5 - 8, 2:16 p.m.</td></tr>
+                <tr style="display: none"><td>Arkansas</td><td>March 4 - 8, 1:51 p.m.</td><td>Oct. 5 - 9, 2:28 p.m.</td></tr>
+                <tr style="display: none"><td>California (Los Angeles)</td><td>March 4 - 8, 1:37 p.m.</td><td>October 5 - 8, 2:13 p.m.</td></tr>
+                <tr style="display: none"><td>California (Northern)</td><td>March 3 - 6, 1:36 p.m.</td><td>October 7 - 10, 2:12 p.m.</td></tr>
+                <tr style="display: none"><td>California (San Francisco)</td><td>March 3 - 7, 1:36 p.m.</td><td>Oct. 6 - 10, 2:12 p.m.</td></tr>
+                <tr style="display: none"><td>Colorado</td><td>March 2 - 6, 1:45 p.m.</td><td>Oct. 7 - 10, 2:21 p.m.</td></tr>
+                <tr style="display: none"><td>Connecticut</td><td>March 2 - 6, 2:00 p.m.</td><td>Oct. 7 - 11, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>Delaware</td><td>March 2 - 6, 1:58 p.m.</td><td>Oct. 7 - 11, 2:34 p.m.</td></tr>
+                <tr style="display: none"><td>District of Columbia</td><td>March 3 - 6, 1:59 p.m.</td><td>Oct. 6 - 10, 2:35 p.m.</td></tr>
+                <tr style="display: none"><td>Florida (Miami)</td><td>March 7 - 11, 1:58 p.m.</td><td>Oct. 2 - 5, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>Florida (Tallahassee)</td><td>March 6 - 9, 1:55 p.m.</td><td>Oct. 4 - 7, 2:33 p.m.</td></tr>
+                <tr style="display: none"><td>Georgia</td><td>March 4 - 8, 1:55 p.m.</td><td>Oct. 5 - 8, 2:33 p.m.</td></tr>
+                <tr style="display: none"><td>Hawaii</td><td>March 10 - 13, 1:16 p.m.</td><td>Sept. 30 - Oct. 2, 1:56 p.m.</td></tr>
+                <tr style="display: none"><td>Idaho</td><td>March 1 - 5, 1:40 p.m.</td><td>Oct. 8 - 11, 2:15 p.m.</td></tr>
+                <tr style="display: none"><td>Illinois (Chicago)</td><td>March 2 - 5, 1:54 p.m.</td><td>Oct. 7 - 10, 2:29 p.m.</td></tr>
+                <tr style="display: none"><td>Illinois (Springfield)</td><td>March 3 - 6, 1:52 p.m.</td><td>Oct. 7 - 10, 2:29 p.m.</td></tr>
+                <tr style="display: none"><td>Indiana</td><td>March 3 - 6, 1:54 p.m.</td><td>Oct. 7 - 10, 2:29 p.m.</td></tr>
+                <tr style="display: none"><td>Iowa</td><td>March 2 - 5, 1:50 p.m.</td><td>Oct. 7 - 11, 2:26 p.m.</td></tr>
+                <tr style="display: none"><td>Kansas</td><td>March 3 - 6, 1:48 p.m.</td><td>Oct. 6 - 10, 2:32 p.m.</td></tr>
+                <tr style="display: none"><td>Kentucky</td><td>March 3 - 7, 1:55 p.m.</td><td>Oct. 6 - 10, 2:32 p.m.</td></tr>
+                <tr style="display: none"><td>Louisiana</td><td>March 5 - 9, 1:51 p.m.</td><td>Oct. 4 - 7, 2:29 p.m.</td></tr>
+                <tr style="display: none"><td>Maine</td><td>March 1 - 5, 2:02 p.m.</td><td>Oct. 8 -12, 2:37 p.m.</td></tr>
+                <tr style="display: none"><td>Maryland</td><td>March 3 - 6, 1:59 p.m.</td><td>Oct. 6 - 10, 2:35 p.m.</td></tr>
+                <tr style="display: none"><td>Massachusetts</td><td>March 2 - 5, 2:01 p.m.</td><td>Oct. 7 - 11, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>Michigan</td><td>March 2 - 5, 1:55 p.m.</td><td>Oct. 8 - 11, 2:31 p.m.</td></tr>
+                <tr style="display: none"><td>Minnesota</td><td>March 1 - 5, 1:51 p.m.</td><td>Oct. 8 - 11, 2:26 p.m.</td></tr>
+                <tr style="display: none"><td>Mississippi</td><td>March 5 - 8, 1:53 p.m.</td><td>Oct. 5 - 8, 2:30 p.m.</td></tr>
+                <tr style="display: none"><td>Missouri</td><td>March 3 - 6, 1:50 p.m.</td><td>Oct. 7 - 10, 2:26 p.m.</td></tr>
+                <tr style="display: none"><td>Montana</td><td>March 1 - 4, 1:44 p.m.</td><td>Oct. 9 - 12, 2:19 p.m.</td></tr>
+                <tr style="display: none"><td>Nebraska</td><td>March 2 - 5, 1:48 p.m.</td><td>Oct. 7- 11, 2:24 p.m.</td></tr>
+                <tr style="display: none"><td>Nevada</td><td>March 3 - 6, 1:38 p.m.</td><td>Oct. 7 - 10, 2:14 p.m.</td></tr>
+                <tr style="display: none"><td>New Hampshire</td><td>March 2 - 5, 2:00 p.m.</td><td>Oct. 8 -11, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>New Jersey</td><td>March 3 - 6, 2:00 p.m.</td><td>Oct. 7 - 10, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>New Mexico</td><td>March 4 - 8, 1:43 p.m.</td><td>Oct. 5 - 9, 2:20 p.m.</td></tr>
+                <tr style="display: none"><td>New York</td><td>March 2 - 6, 2:00 p.m.</td><td>Oct. 7 - 10, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>North Carolina</td><td>March 4 - 7, 1:58 p.m.</td><td>Oct. 5 - 9, 2:34 p.m.</td></tr>
+                <tr style="display: none"><td>North Dakota</td><td>Feb. 28 - March 4, 1:47 p.m.</td><td>Oct. 9 - 13, 2:22 p.m.</td></tr>
+                <tr style="display: none"><td>Ohio</td><td>March 3 - 6, 1:55 p.m.</td><td>Oct. 6 - 10, 2:31 p.m.</td></tr>
+                <tr style="display: none"><td>Oklahoma</td><td>March 4 - 7, 1:48 p.m.</td><td>Oct. 5 - 9, 2:25 p.m.</td></tr>
+                <tr style="display: none"><td>Oregon</td><td>March 1 - 5, 1:38 p.m.</td><td>Oct. 8 - 11, 2:13 p.m.</td></tr>
+                <tr style="display: none"><td>Pennslyvania</td><td>March 2 - 6, 1:58 p.m.</td><td>Oct. 7 - 11, 2:34 p.m.</td></tr>
+                <tr style="display: none"><td>Puerto Rico</td><td>March 10 - 13, 2:06 p.m.</td><td>Sept. 28 - Oct. 1, 2:46 p.m.</td></tr>
+                <tr style="display: none"><td>Rhode Island</td><td>March 2 - 6, 2:00 p.m.</td><td>Oct. 7 - 11, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>South Carolina</td><td>March 4 - 8, 1:57 p.m.</td><td>Oct. 5 - 8, 2:34 p.m.</td></tr>
+                <tr style="display: none"><td>South Dakota</td><td>March 1 - 5, 1:47 p.m.</td><td>Oct. 8 - 12, 2:22 p.m.</td></tr>
+                <tr style="display: none"><td>Tennessee</td><td>March 4 - 8, 1:54 p.m.</td><td>Oct. 6 - 9, 2:31 p.m.</td></tr>
+                <tr style="display: none"><td>Texas (Amarillo)</td><td>March 4 - 7, 1:45 p.m.</td><td>Oct. 5 - 9, 2:23 p.m.</td></tr>
+                <tr style="display: none"><td>Texas (Austin)</td><td>March 5 - 9, 1:48 p.m.</td><td>Oct. 3 - 7, 2:25 p.m.</td></tr>
+                <tr style="display: none"><td>Texas (San Antonio)</td><td>March 6 - 9, 1:47 p.m.</td><td>Oct. 3 - 7, 2:24 p.m.</td></tr>
+                <tr style="display: none"><td>Utah</td><td>March 3 - 6, 1:41 p.m.</td><td>Oct. 6 - 10, 2:17 p.m.</td></tr>
+                <tr style="display: none"><td>Vermont</td><td>March 2 - 5, 2:00 p.m.</td><td>Oct. 8 - 11, 2:36 p.m.</td></tr>
+                <tr style="display: none"><td>Virginia</td><td>March 3 - 7, 1:58 p.m.</td><td>Oct. 6 - 9, 2:35 p.m.</td></tr>
+                <tr style="display: none"><td>Washington</td><td>Feb. 28 - March 4, 1:38 p.m.</td><td>Oct. 9 - 12, 2:13 p.m.</td></tr>
+                <tr style="display: none"><td>West Virginia</td><td>March 3 - 6, 1:44 p.m.</td><td>Oct. 6 - 10, 2:20 p.m.</td></tr>
+                <tr style="display: none"><td>Wisconsin</td><td>March 2 - 5, 1:52 p.m.</td><td>Oct. 8 - 11, 2:28 p.m.</td></tr>
+                <tr style="display: none"><td>Wyoming</td><td>March 2 - 5, 1:43 p.m.</td><td>Oct. 8 - 11, 2:19 p.m.</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+<div class="container" id="container">
+</div>
+<!--SCRIPTS--> 
+<script>
+    function myFunction() {
+        var input, filter, table, tr, td, i;
+        input = document.getElementById("mylist");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            tr[i].style.display ="none";
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }       
+        }
+    }
+    </script>
+
+    
+</body>
+</html>
