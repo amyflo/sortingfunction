@@ -190,19 +190,3 @@ var time2s=[
     "Oct. 8 - 11, 2:19 p.m."
 ]
 
-// create items
-function createItems() {
-    var $items;
-  
-    for (var i=0; i<locations.length; i++){
-      var location = locations[i];
-      var time1 = time1s[i];
-      var time1 = time2s[i];
-      var $item = $("<div />", {
-        "class": "box " + location
-      });
-      $item.append("<div" + <p> + location + time1 time</p>);
-      $items = $items ? $items.add( $item ) : $item;
-    }
-    $items.appendTo( $("#container") );
-  }
