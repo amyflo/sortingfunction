@@ -1,23 +1,20 @@
 .table-sort{
     text-align: left;
-    background: lightblue;
-    border-radius: 10px;
-    padding: 20px;
-    width: 750px;
 }
 
-select {
+.myList {
     width: 300px;
     margin-bottom: 30px;
     padding: 5px 35px 5px 5px;
     font-size: 16px;
-    border: 1px solid #CCC;
+    border-radius: 0;
+    background-color: rgba(73, 127, 156, 0.13);
+    border: 1px solid rgba(13, 76, 123, 0.45);
     height: 34px;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    background: url(hhttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-7i81Mwk0WddzWYOakcOGB4O4W98aqXIyZg&usqp=CAU) 96% / 15% no-repeat #EEE;
-  }
+}
 
 td{
     width: 250px;
